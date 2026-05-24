@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contato</title>
+
+    <link rel="icon" type="image/png" href="/img/logo.png">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+<div class="sidebar">
+    <a href="index.html">Home</a>
+    <a class="active" href="form.html">Contato</a>
+    <a href="about.html">Sobre</a>
+</div>
+
+<div class="content">
+
+    <h1>Contato</h1>
+
+    <form action="formAction.html" method="GET">
+
+        <input type="text"
+               name="nome"
+               placeholder="Digite seu nome"
+               required
+               pattern="[A-Za-zÀ-ÿ\s]{3,50}">
+
+        <input type="email"
+               name="email"
+               placeholder="Digite seu email"
+               required>
+
+        <input type="tel"
+               name="telefone"
+               id="telefone"
+               placeholder="(xx) xxxxx-xxxx"
+               required>
+
+        <div class="form-group">
+            <textarea 
+                name="mensagem" 
+                id="mensagem" 
+                placeholder="Digite sua mensagem..." 
+                required>
+            </textarea>
+        </div>
+
+        <input type="submit" value="Enviar">
+
+    </form>
+
+</div>
+
+<script src="/js/form.js"></script>
+
+</body>
+</html>

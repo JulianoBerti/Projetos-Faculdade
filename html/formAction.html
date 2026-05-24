@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dados Recebidos</title>
+
+    <link rel="icon" type="image/png" href="/img/logo.png">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <a href="index.html">Home</a>
+        <a class="active" href="form.html">Contato</a>
+        <a href="about.html">Sobre</a>
+    </div>
+
+    <div class="content">
+
+        <h1>Dados Recebidos</h1>
+
+        <div class="about-box">
+
+            <p id="resultado"></p>
+
+        </div>
+
+    </div>
+
+    <script>
+
+        const params = new URLSearchParams(window.location.search);
+
+        const nome = params.get("nome");
+        const email = params.get("email");
+        const telefone = params.get("telefone");
+        const mensagem = params.get("mensagem");
+
+        document.getElementById("resultado").innerHTML =
+        `
+        <strong>Nome:</strong> ${nome} <br><br>
+
+        <strong>Email:</strong> ${email} <br><br>
+
+        <strong>Telefone:</strong> ${telefone} <br><br>
+
+        <strong>Mensagem:</strong> ${mensagem}
+        `;
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Burger House</title>
+    <link rel="icon" type="image/png" href="/img/logo.png">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+<div class="sidebar">
+    <a class="active" href="index.html">Home</a>
+    <a href="form.html">Contato</a>
+    <a href="about.html">Sobre</a>
+</div>
+
+<div class="content">
+
+    <h1>Burger House</h1>
+    <h2>Os melhores hambúrgueres da cidade</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <img src="/img/burger1.jpg" alt="Hamburguer">
+            <p class="descricao">Hambúrguer artesanal com cheddar , bacon crocante e pão brioche</p>
+            <button onclick="openModal('Tradicional')">
+                Comprar
+            </button>
+        </div>
+
+        <div class="card">
+            <img src="/img/burger2.jpg" alt="Hamburguer">
+            <p class="descricao">Hambúrguer artesanal com salada fresca, queijo cheddar e molho especial</p>
+            <button onclick="openModal('Bacon')">
+                Comprar
+            </button>
+        </div>
+
+        <div class="card">
+            <img src="/img/burger3.png" alt="Hamburguer">
+            <p class="descricao"> Hambúrguer artesanal com carne premium, cheddar derretido e pão brioche</p>
+            <button onclick="openModal('Especial')">
+                Comprar
+            </button>
+        </div>
+
+    </div>
+</div>
+
+<div id="modal" class="modal">
+    <span class="close" onclick="closeModal()">X</span>
+
+    <h3 id="tituloModal"></h3>
+    <p id="textoModal"></p>
+</div>
+
+<script src="script/script.js"></script>
+
+</body>
+</html>
