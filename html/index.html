@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Burger House</title>
+    <title>Burger Cwb</title>
     <link rel="icon" type="image/png" href="/img/logo.png">
     <link rel="stylesheet" href="/css/style.css">
 </head>
@@ -10,14 +10,17 @@
 <body>
 
 <div class="sidebar">
-    <a class="active" href="index.html">Home</a>
+    <a class="active" href="index.html">Inicio</a>
     <a href="form.html">Contato</a>
     <a href="about.html">Sobre</a>
 </div>
 
 <div class="content">
 
-    <h1>Burger House</h1>
+    <div class="titulo-logo">
+    <img src="/img/logo.png" alt="Logo">
+    <h1>Burger Cwb</h1>
+</div>
     <h2>Os melhores hambúrgueres da cidade</h2>
 
     <div class="cards">
@@ -41,6 +44,14 @@
         <div class="card">
             <img src="/img/burger3.png" alt="Hamburguer">
             <p class="descricao"> Hambúrguer artesanal com carne premium, cheddar derretido e pão brioche</p>
+            <button onclick="openModal('Especial')">
+                Comprar
+            </button>
+        </div>
+
+         <div class="card">
+            <img src="/img/burguer4.png" alt="Hamburguer">
+            <p class="descricao"> Hambúrguer artesanal com carne premium, mussarela derretido e pão francês</p>
             <button onclick="openModal('Especial')">
                 Comprar
             </button>

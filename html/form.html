@@ -12,14 +12,18 @@
 <body>
 
 <div class="sidebar">
-    <a href="index.html">Home</a>
+    <a href="index.html">Inicio</a>
     <a class="active" href="form.html">Contato</a>
     <a href="about.html">Sobre</a>
 </div>
 
 <div class="content">
 
+    <div class="titulo-logo">
+    <img src="/img/logo.png" alt="Logo">
     <h1>Contato</h1>
+</div>
+    
 
     <form action="formAction.html" method="GET">
 
@@ -48,10 +52,17 @@
                 required>
             </textarea>
         </div>
-
+    <div class="checkbox-termos">
+            <input type="checkbox" id="termos" required>
+            <label for="termos"> Concordo com os <a href="#" onclick="return false;" class="link-termos">termos de uso</a></label>
+    </div>
         <input type="submit" value="Enviar">
 
     </form>
+
+
+</div>
+
 
 </div>
 
